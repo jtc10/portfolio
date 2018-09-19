@@ -1,53 +1,61 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>#</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
-</head>
-<body>
-	<div class="section" id="home"> <!-- container div for home page -->
-		<div class="image">				<!-- div for background image on homepage -->
-			<h1 class="main-h1">Get Noticed</h1>
-			<h2>Website Design and Development</h2>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="author" content="John Cyzeski">
+		<meta name="description" content="Front end web developer">
+		<meta name="keywords" content="HTML, CSS, JavaScript, React, Git, website">
+		<title>Portfolio | John Cyzeski - Front-End Web Developer</title>
+		<link rel="stylesheet" type="text/css" href="normalize-8.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	<body>
+
+		<header>
 			<nav>
+				<div class="nav-info-container">
+					<div class="nav-design"></div>
+					<div class="nav-name-title">
+						<h3 class="blue">John Cyzeski</h3>
+						<h6 class="blue">Front-End Developer</h6>
+					</div>
+				</div>
+				<div class="menu-toggle-container">
+					<div class="hamburger-menu"></div>
+				</div>
 				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li class="list-item"><a class="about" href="#about">About</a></li>
+					<li class="list-item "><a class="portfolio" href="#portfolio">Portfolio</a></li>
+					<li class="list-item"><a class="contact" href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-		</div>  <!-- close background image div -->
-	</div>  <!-- close container div -->
-	<div class="interlude">  <!-- interlude -->
-		<p>Passion, Obsession, Design</p>
-	</div>    <!-- close interlude -->
-	<div class="section" id="about">  <!-- container div for about page -->
-		<div class="opacity">  <!-- div for opacity -->
-			<div class="profile-pic"></div>  <!-- opening/closing for background image on about page -->
-			<h1 id="name">John Cyzeski</h1>
-			<p class="about-content">Hello,  My name is John and I'm glad you decided to visit my site!  I'm a Web Designer and Develop from Boston MA and am currently looking to help individuals and business design and deploy their own websites.  Any site will be considered so don't hesitate to visit my contact page a reach out!  In the meantime, feel free to view my previous projects so you can get an idea what I do.</p>
-			
-		</div>  <!-- closing opacity -->
-		
-	</div>  	<!-- close about page container -->
-	<div class="interlude">  <!-- opening for interlude -->
-		<p>Something, Something, Something</p>
-	</div> <!-- close interlude -->
-	<div class="section" id="projects"> <!-- container div for projects page -->
-		<h1 class="projects-header">View Past Projects</h1>
-		<div class="iframe">
-			<iframe src="https://codepen.io/"></iframe>
-			<iframe src="http://adamcarolla.com/"></iframe>
-			<iframe src="http://www.larrymillershow.com/"></iframe>
-		</div>
-		<h3><a href="#">Would You Like to View More Projects?</a></h3>
-	</div> <!-- close projects page container -->
-	<div class="interlude">  <!-- opening for interlude -->
-		<p>Something, Something, Something</p>
-	</div> <!-- close interlude -->
-	<div class="section" id="contact"> <!-- opening div for contact page -->
-	</div> <!-- closing for contact page -->
-</body>
+		</header>
+
+		<main>
+			<!-- Landing page section -->
+			<section class="landing-page">
+				<div class="landing-flex-container">
+					<div>
+						<h2 class="blue">Front-End Developer</h2>
+						<p class="blue">Building quality responsive websites and excellent user experience</p>
+						<h3><a class="button blue" href="#portfolio">View Portfolio</a></h3>
+				 	</div>
+				</div>
+
+			</section>
+			<section class="about-section" id="about">
+				<h1>about</h1>
+			</section>
+			<section class="portfolio-section" id="portfolio">
+				<h1>port</h1>
+			</section>
+			<section class="contact-section" id="contact">
+				<h1>contact</h1>
+			</section>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
 </html>
