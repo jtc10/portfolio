@@ -5,11 +5,15 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	--blue-color: #3a4660;
+	/* --blue-color: #3a4660;
 	--tan-color: #c9af98;
 	--kreme-color: #ed8a63;
-	--brown-color: #845007;
+	--brown-color: #845007; */
 	--off-white-color: #f9f9f9;
+	--powder: #bfd8d2;
+	--peach: #fedcd2;
+	--warm: #df744a;
+	--lemon: #dcb239;
 	--nav-font: 'Roboto', sans-serif;
 }
 
@@ -196,9 +200,9 @@ nav li:last-child {
 /**********               *********/
 
 .landing-page {
-	/* background-color: var(--tan-color); */
-	background: url('images/background-blue.jpg') center center;
-	background-size: cover;
+	background-color: var(--powder);
+	/* background: url('images/pineapple.jpg') center center;
+	background-size: cover; */
 	height: 70vh;
 }
 
