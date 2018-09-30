@@ -17,10 +17,9 @@
 	--nav-font-color: #808080 ;
 	--nav-font: 'Roboto', sans-serif;
 }
-.about,
-.portfolio {
-	height: 100vh;
-}
+
+/********** General Recurring Values **********/
+/**********                          **********/
 
 body {
 	font-family: var(--nav-font);
@@ -46,7 +45,94 @@ nav li {
 	font-family: var(--nav-font);
 }
 
-.hide{
+.image-container {
+	width: 100%;
+	height: 40vh;
+}
+
+.image-content-container {
+	width: 80%;
+	margin: auto;
+}
+
+.image-content-container h2 {
+	color: white;
+	margin: 40px 0;
+	font-size: 2rem;
+}
+
+.image-content-container p {
+	color: var(--nav-font-color);
+	line-height: 2rem;
+}
+
+.tech-used {
+	font-weight: bold;
+	font-style: italic;
+	margin-top: 20px;
+}
+
+.project-title {
+	color: white;
+	margin: 40px 0;
+	text-transform: uppercase;
+}
+
+.button-container {
+	display: inline-block;
+	border: 1px solid white;
+	border-radius: 20px;
+	margin: 40px 0;
+}
+
+.button-container a {
+	color: white;
+}
+.button-container h3 {
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px;
+}
+
+@media only screen and (min-width: 475px) {
+
+	.image-content-container .button-container {
+		width: 200px;
+		margin-top: 40px;
+	}
+}
+
+@media only screen and (min-width: 980px) {
+
+	.content-container {
+		display: flex;
+		height: 40vh;
+	}
+
+	.image-container {
+		height: 40vh;
+		width: 35vw;
+	}
+
+	.image-content-container {
+		width: 65vw;
+		margin: auto;
+	}
+	.image-content-container div {
+		width: 90%;
+		margin: auto;
+	}
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+
+	.content-container {
+		width: 80vw;
+		height: 40vh;
+		float: right;
+	}
 
 }
 
@@ -68,6 +154,8 @@ header {
 			display: block;
 			background-color: var(--off-white-color);
 			height: 60px;
+			position: fixed;
+			width: 100%;
 		}
 
 		nav ul {
@@ -76,7 +164,7 @@ header {
 		nav ul li {
 			display: inline-block;
 			line-height: 60px;
-			margin: 0 20px;
+			margin: 0 40px;
 		}
 
 		nav ul li a {
@@ -98,14 +186,24 @@ header {
 
 	/* changes nav from top to side */
 	.header-landing {
-		/* display: flex; */
 
 	}
+
 	header {
 		height: 100vh;
 		width: 20vw;
 		position: fixed;
 		float: left;
+	}
+
+	nav ul {
+		text-align: right;
+		margin-top: 30vh;
+	}
+
+	nav ul li {
+		margin-top: 50px;
+		display: block;
 	}
 }
 
@@ -113,9 +211,9 @@ header {
 /**********               *********/
 
 .landing-page {
-	background-color: var(--powder);
-	/* background: url('images/pineapple.jpg') center center;
-	background-size: cover; */
+	/* background-color: var(--powder); */
+	background: url('images/pineapple.jpg') center center;
+	background-size: cover;
 	height: 70vh;
 }
 
@@ -132,12 +230,12 @@ header {
 	text-align: center;
 }
 
-.landing-flex-container div div {
+/* .button-container {
 	display: inline-block;
 	border: 1px solid white;
 	border-radius: 20px;
 	margin-top: 40px;
-}
+} */
 
 .landing-flex-container div h2 {
 	padding-bottom: 20px;
@@ -147,33 +245,48 @@ header {
 .landing-flex-container div p {
 	line-height: 1.5rem;
 	padding-bottom: 20px;
-	color: white;
+	color: var(--nav-font-color);
 }
 
-.landing-flex-container div h3 {
+/* .button-container h3 {
 	text-transform: uppercase;
 	text-align: center;
 	padding: 10px;
-}
+} */
 
-.landing-flex-container div a {
+/* .button-container a {
 	color: white;
-}
+} */
 
 
 /***** Media Queries *****/
 
+
+@media only screen and (min-width: 475px) {
+
+			.landing-flex-container div {
+				text-align: left;
+			}
+
+			.landing-flex-container div div {
+				width: 200px;
+			}
+
+}
+
 @media only screen and (min-width: 760px) {
 	.landing-page {
-		height: 100vh;
+		height: 90vh;
 	}
-	.landing-flex-container div {
-		text-align: left;
+	.landing-flex-container {
+		height: 90vh;
+	}
+	.landing-flex-container div div {
+		text-align: center;
 	}
 	.landing-flex-container div h3 {
 		display: inline-block;
-		text-align: left;
-		border-bottom: 2px solid white;
+
 	}
 	.landing-flex-container div h2 {
 		font-size: 2.5rem;
@@ -202,10 +315,60 @@ header {
 
 @media only screen and (min-width: 1280px) {
 	.landing-page {
-			width: 80vw;
-			float: right;
+		height: 100vh;
+		width: 80vw;
+		float: right;
+	}
+
+	.landing-flex-container {
+		height: 100vh;
 	}
 }
 
 /********** About Page **********/
 /**********            **********/
+
+
+.about-content {
+	background-color: var(--powder);
+	padding-bottom: 50px;
+}
+
+.about-content .image-container {
+	background: url('images/image1.jpeg') center top;
+	background-size: cover;
+}
+
+
+
+/********** Meida Queries **********/
+
+@media only screen and (min-width: 760px) {
+
+	/* .about-content {
+		display: flex;
+		height: 60vh;
+	}
+	.about-image-container {
+		height: 100%;
+		width: 40vw;
+	} */
+
+
+}
+
+/********** Portfolio Page **********/
+/**********                **********/
+
+.portfolio-content:nth-child(even) {
+	background-color: var(--powder);
+}
+
+.portfolio-content:nth-child(odd) {
+	background-color: #bfd1d2;
+}
+
+.portfolio-content .image-container {
+	background: url('images/pineapple.jpg') center top;
+	background-size: cover;
+}
