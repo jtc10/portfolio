@@ -372,3 +372,61 @@ header {
 	background: url('images/pineapple.jpg') center top;
 	background-size: cover;
 }
+
+/********** Technologies I know page *********/
+/**********                          *********/
+
+.technology-knowledge-section {
+	background-color: var(--lemon);
+}
+
+.knowledge-container {
+	width: 80%;
+	margin: auto;
+
+}
+
+.knowledge-title h2 {
+	padding: 40px 0 20px 0;
+	color: white;
+}
+
+.knowledge-title p {
+	margin-bottom: 40px;
+	color: var(--nav-font-color);
+}
+
+.knowledge-content {
+	border: 1px solid white;
+	border-radius: 5px;
+	background-color: rgba(255,255,255, 0.2);
+
+}
+
+.knowledge-content-wrapper {
+	width: 90%;
+	margin: auto;
+
+}
+
+.knowledge-content-wrapper h3 {
+	margin: 40px 0;
+	color: white;
+}
+
+.knowledge-content-wrapper p {
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	color: var(--nav-font-color);
+}
+
+/********* Media Queries ********/
+
+@media only screen and (min-width: 1280px) {
+
+	.technology-knowledge-section {
+		width: 80vw;
+		float: right;
+	}
+
+}
