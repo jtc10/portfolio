@@ -1,15 +1,8 @@
 
 
-const menuToggle = document.getElementsByClassName('menu-toggle-container');
 const ul = document.getElementsByTagName('ul');
-const button = document.getElementsByClassName('button');
+const button = document.getElementsByClassName('scroll');
 
-// Responsive nav menu toggle
-
-menuToggle[0].addEventListener('click', function () {
-  //ul[0].style.maxHeight = '200px';
-  ul[0].classList.toggle('hide');
-});
 
 
 // Smooth Scroll
@@ -58,6 +51,16 @@ ul[0].addEventListener('click', function (e) {
 });
 
 button[0].addEventListener('click', function () {
+    let target = '.about-section';
+    smoothScroll(target, 1000);
+});
+
+button[1].addEventListener('click', function () {
     let target = '.portfolio-section';
+    smoothScroll(target, 1000);
+});
+
+button[2].addEventListener('click', function () {
+    let target = '.contact-section';
     smoothScroll(target, 1000);
 });

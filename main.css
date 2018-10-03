@@ -31,6 +31,7 @@ li {
 
 a {
 	text-decoration: none;
+	color: white;
 }
 
 h1 {
@@ -83,6 +84,7 @@ nav li {
 	border: 1px solid white;
 	border-radius: 20px;
 	margin: 40px 0;
+	transition: background-color .3s;
 }
 
 .button-container a {
@@ -94,9 +96,15 @@ nav li {
 	padding: 10px;
 }
 
+.button-container:hover,
+input[type="submit"]:hover {
+	background-color: rgba(255,255,255, 0.2);
+}
+
 @media only screen and (min-width: 475px) {
 
-	.image-content-container .button-container {
+	.image-content-container .button-container,
+	.button-container {
 		width: 200px;
 		margin-top: 40px;
 	}
@@ -127,11 +135,14 @@ nav li {
 
 @media only screen and (min-width: 1280px) {
 
-
-	.content-container {
+	section {
 		width: 80vw;
-		height: 40vh;
 		float: right;
+	}
+	.content-container {
+		/* width: 80vw; */
+		height: 40vh;
+		/* float: right; */
 	}
 
 }
@@ -192,7 +203,6 @@ header {
 	header {
 		height: 100vh;
 		width: 20vw;
-		position: fixed;
 		float: left;
 	}
 
@@ -222,12 +232,13 @@ header {
 	height: 70vh;
 	align-items: center;
 	justify-content: center;
-
+	background-color: rgba(0,0,0, 0.2);
 }
 
 .landing-flex-container div {
 	width: 80%;
 	text-align: center;
+
 }
 
 /* .button-container {
@@ -245,7 +256,7 @@ header {
 .landing-flex-container div p {
 	line-height: 1.5rem;
 	padding-bottom: 20px;
-	color: var(--nav-font-color);
+	color: white;
 }
 
 /* .button-container h3 {
@@ -356,9 +367,17 @@ header {
 
 
 }
+@media only screen and (min-width: 760px) {
+	/* .about-section {
+		width: 80vw;
+		float: right;
+	} */
+}
 
 /********** Portfolio Page **********/
 /**********                **********/
+
+
 
 .portfolio-content:nth-child(even) {
 	background-color: var(--powder);
@@ -368,9 +387,21 @@ header {
 	background-color: #bfd1d2;
 }
 
-.portfolio-content .image-container {
-	background: url('images/pineapple.jpg') center top;
+.portfolio-content:first-child .image-container {
+	background: url('images/news-agg.png') center center;
 	background-size: cover;
+}
+
+.portfolio-content:nth-child(2) .image-container {
+	background: url('images/restaurant.png') center center;
+	background-size: cover;
+}
+
+@media only screen and (min-width: 1280px) {
+	.portfolio-section {
+		width: 80vw;
+		float: right;
+	}
 }
 
 /********** Technologies I know page *********/
@@ -429,4 +460,120 @@ header {
 		float: right;
 	}
 
+}
+
+/********** Contact Section **********/
+/**********                 **********/
+
+input {
+	width: 100%;
+	height: 35px;
+	margin-bottom: 30px;
+	border: none;
+	border-radius: 5px;
+}
+
+input[type="submit"] {
+	display: block;
+	height: 41px;
+	line-height: 41px;
+	width: 200px;
+	margin: 0 auto 30px auto;
+	background-color: transparent;
+	font-family: var(--nav-font);
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	border: 1px solid white;
+	border-radius: 20px;
+	transition: background-color .3s;
+}
+textarea {
+	width: 100%;
+	height: 200px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+.contact-section {
+	background-color: var(--warm);
+	color: white;
+	height: auto;
+}
+
+.contact-content {
+	width: 80%;
+	margin: auto;
+}
+
+.contact-form {
+	border-bottom: 1px dotted white;
+}
+
+.contact-form h2 {
+	padding: 40px 0;
+}
+
+.contact-info {
+	padding-bottom: 40px;
+}
+
+.contact-info h3 {
+	margin: 40px 0;
+}
+
+.contact-info h4 {
+	margin: 10px 0 10px 0;
+}
+
+.fab {
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+/********** Meida Queries *********/
+
+@media only screen and (min-width: 760px) {
+
+	form > div {
+		display: inline-block;
+		width: 45%;
+	}
+
+	form div:nth-child(1) {
+		float: right;
+	}
+
+	input[type="submit"] {
+		margin: 0 0 30px 0;
+	}
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+	.contact-section {
+		width: 80vw;
+		float: right;
+	}
+	.contact-content {
+		display: flex;
+		flex-direction: row;
+	}
+	.contact-form {
+		border-bottom: none;
+		border-right: 1px dotted white;
+		width: 50%;
+	}
+	form {
+		width: 90%;
+	}
+	.contact-info div:first-child {
+		width: 80%;
+		margin-left: 60%;
+	}
+	.contact-info div > div {
+		margin: 40px 0;
+	}
 }
