@@ -114,18 +114,20 @@ input[type="submit"]:hover {
 
 	.content-container {
 		display: flex;
-		height: 40vh;
+		/* height: 40vh; */
+		min-height: auto;
 	}
 
 	.image-container {
 		/* height: 40vh; */
-		height: 100%;
+		height: auto;
 		width: 35vw;
 	}
 
 	.image-content-container {
 		width: 65vw;
 		margin: auto;
+		padding-bottom: 40px;
 	}
 	.image-content-container div {
 		width: 90%;
@@ -143,6 +145,7 @@ input[type="submit"]:hover {
 
 	.content-container {
 		height: 100%;
+
 	}
 
 	.image-container {
