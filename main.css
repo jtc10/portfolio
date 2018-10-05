@@ -118,7 +118,8 @@ input[type="submit"]:hover {
 	}
 
 	.image-container {
-		height: 40vh;
+		/* height: 40vh; */
+		height: 100%;
 		width: 35vw;
 	}
 
@@ -139,10 +140,25 @@ input[type="submit"]:hover {
 		width: 80vw;
 		float: right;
 	}
+
 	.content-container {
-		/* width: 80vw; */
-		height: 40vh;
-		/* float: right; */
+		height: 100%;
+	}
+
+	.image-container {
+		height: auto;
+	}
+
+	.image-content-container {
+		padding-bottom: 40px;
+	}
+
+	.about-content .image-container {
+		height: auto;
+	}
+
+	.button-container {
+		margin: 0;
 	}
 
 }
@@ -342,7 +358,7 @@ header {
 
 .about-content {
 	background-color: var(--powder);
-	padding-bottom: 50px;
+	/* padding-bottom: 50px; */
 }
 
 .about-content .image-container {
@@ -458,6 +474,14 @@ header {
 	.technology-knowledge-section {
 		width: 80vw;
 		float: right;
+	}
+
+	.knowledge-container {
+		padding-bottom: 10px;
+	}
+
+	.knowledge-container .button-container {
+		margin: 40px 0 ;
 	}
 
 }
