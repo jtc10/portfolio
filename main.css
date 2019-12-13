@@ -241,7 +241,7 @@ header {
 
 .landing-page {
 	/* background-color: var(--powder); */
-	background: url('images/pineapple.jpg') center center;
+	background: url('/pineapple.jpg') center center;
 	background-size: cover;
 	height: 70vh;
 }
@@ -260,13 +260,6 @@ header {
 
 }
 
-/* .button-container {
-	display: inline-block;
-	border: 1px solid white;
-	border-radius: 20px;
-	margin-top: 40px;
-} */
-
 .landing-flex-container div h2 {
 	padding-bottom: 20px;
 	color: white;
@@ -277,16 +270,6 @@ header {
 	padding-bottom: 20px;
 	color: white;
 }
-
-/* .button-container h3 {
-	text-transform: uppercase;
-	text-align: center;
-	padding: 10px;
-} */
-
-/* .button-container a {
-	color: white;
-} */
 
 
 /***** Media Queries *****/
@@ -365,7 +348,7 @@ header {
 }
 
 .about-content .image-container {
-	background: url('images/image1.jpeg') center top;
+	background: url('/image1.jpeg') center top;
 	background-size: cover;
 }
 
@@ -375,22 +358,12 @@ header {
 
 @media only screen and (min-width: 760px) {
 
-	/* .about-content {
-		display: flex;
-		height: 60vh;
-	}
-	.about-image-container {
-		height: 100%;
-		width: 40vw;
-	} */
+
 
 
 }
 @media only screen and (min-width: 760px) {
-	/* .about-section {
-		width: 80vw;
-		float: right;
-	} */
+
 }
 
 /********** Portfolio Page **********/
@@ -407,14 +380,20 @@ header {
 }
 
 .portfolio-content:first-child .image-container {
-	background: url('images/news-agg.png') center center;
+	background: url('/emails-pic.png') center center;
 	background-size: cover;
 }
 
 .portfolio-content:nth-child(2) .image-container {
-	background: url('images/restaurant.png') center center;
+	background: url('/news-agg.png') center center;
 	background-size: cover;
 }
+
+.portfolio-content:nth-child(3) .image-container {
+	background: url('/restaurant.png') center center;
+	background-size: cover;
+}
+
 
 @media only screen and (min-width: 1280px) {
 	.portfolio-section {
